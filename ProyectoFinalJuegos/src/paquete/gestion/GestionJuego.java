@@ -74,8 +74,12 @@ public class GestionJuego
         }
     }
     
-    public void AgregarEnCualquierPosicion(int posicion, Juego referencia)
+    public void AgregarEnCualquierPosicion(Juego referencia)
     {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese la posicion en la que desee agregar los datos del jugador extra: ");
+        System.out.println("¡Recuerde no exceder el tamaño!");
+        int posicion = sc.nextInt();
         if (conta<arreglo.length)
         {
             if (posicion<conta)
@@ -140,6 +144,7 @@ public class GestionJuego
     
     public String VerInfo()
     {
+        System.out.println("La Lista los Sistemas Operativos Compatibles y todos los jugadores es: ");
         String cad = arreglo[0].MostrarSOCompatible();
         for(int i=0;i<conta;i++)
         {

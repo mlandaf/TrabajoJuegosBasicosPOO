@@ -8,6 +8,7 @@ package paquete.clases;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  *
@@ -23,9 +24,11 @@ public abstract class Juego
     protected int puntajeTotal;
     protected ArrayList<SistemaOperativoCompatible> arreglo;
 
-    public Juego(String nombreJugador) 
+    public Juego() 
     {
-        this.nombreJugador = nombreJugador;
+        System.out.println("Ingresar nombre del jugador: ");
+        Scanner sc = new Scanner(System.in);
+        this.nombreJugador = sc.next();
         this.numeroAcierto = 0;
         this.numeroError = 0;
         this.puntajeTotal = 0;

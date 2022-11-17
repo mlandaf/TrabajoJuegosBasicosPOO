@@ -19,9 +19,9 @@ public class JuegoMatematico extends Juego implements Constantes01
     Scanner sc = new Scanner(System.in);
     Random random = new Random();
 
-    public JuegoMatematico(String nombreJugador) 
+    public JuegoMatematico() 
     {
-        super(nombreJugador);
+        super();
     }
 
     public int getSecret_num() 
@@ -39,7 +39,7 @@ public class JuegoMatematico extends Juego implements Constantes01
     {
         this.lives_temp = VIDA_TOTAL;
         secret_num = random.nextInt(max_range-0+1)+0;
-        System.out.println("Bienvenido al Juego de adivina el numero!!");
+        System.out.println("Bienvenid@ " + this.nombreJugador + " al Juego de adivina el numero!!");
         System.out.println("Tendras que adivinar un numero aleatorio. Pero tranquil@ te daremos pistas");
         System.out.println("Empezemos!!!");
         

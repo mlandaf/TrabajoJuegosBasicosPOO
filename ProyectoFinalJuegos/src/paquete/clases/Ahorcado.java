@@ -23,9 +23,9 @@ public class Ahorcado extends Juego implements Constantes01 , Constantes02
     private int vidaTemp;
     private boolean ganar;
 
-    public Ahorcado(String nombreJugador) 
+    public Ahorcado() 
     {
-        super(nombreJugador);
+        super();
     }
 
     public String[] getAnimaldomestico() {
@@ -120,7 +120,7 @@ public class Ahorcado extends Juego implements Constantes01 , Constantes02
         this.vidaTemp = VIDA_TOTAL;
         
        this.ganar = false;
-       System.out.println("\n¡Bienvenido " + this.nombreJugador + " al juego del AHORCADO!" +  
+       System.out.println("\n¡Bienvenido/a " + this.nombreJugador + " al juego del AHORCADO!" +  
                "\nEn este juego usted intentara adivinar un animal domestico" + 
                "\nLe quedan " + this.vidaTemp + " vidas" +
                "\nEl animal domestico tiene el siguiente numero de caracteres: " + this.numPalabraSecreta +

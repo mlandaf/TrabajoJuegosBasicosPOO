@@ -25,7 +25,7 @@ public class Prueba
         ///////////////////////////////////////////////////////////////////////////////////////////
         
         //AHORCADO
-        Ahorcado objA = new Ahorcado("Pedro");
+        Ahorcado objA = new Ahorcado();
         objA.AgregarSOCompatible(objSOC);
         objA.AgregarSOCompatible(objSOC1);
         objA.AgregarSOCompatible(objSOC2);
@@ -38,7 +38,7 @@ public class Prueba
         System.out.println(objA.VerInfo());
         System.out.println("\n");
         ////////////////////////////////////////////////////
-        Ahorcado objA1= new Ahorcado("Ana");
+        Ahorcado objA1= new Ahorcado();
         objA1.AgregarSOCompatible(objSOC);
         objA1.AgregarSOCompatible(objSOC1);
         objA1.AgregarSOCompatible(objSOC2);
@@ -53,7 +53,7 @@ public class Prueba
         ////////////////////////////////////////////////////
         
         //ADIVINANZA
-        Adivinanza objAD = new Adivinanza ("Pepe");
+        Adivinanza objAD = new Adivinanza ();
         objAD.AgregarSOCompatible(objSOC);
         objAD.AgregarSOCompatible(objSOC1);
         objAD.AgregarSOCompatible(objSOC2);
@@ -65,7 +65,7 @@ public class Prueba
         System.out.println(objAD.VerInfo());
         System.out.println("\n");
         ////////////////////////////////////////////////////
-        Adivinanza objAD1 = new Adivinanza ("Andrea");
+        Adivinanza objAD1 = new Adivinanza ();
         objAD1.AgregarSOCompatible(objSOC);
         objAD1.AgregarSOCompatible(objSOC1);
         objAD1.AgregarSOCompatible(objSOC2);
@@ -79,7 +79,7 @@ public class Prueba
         ////////////////////////////////////////////////////
         
         //JUEGO MATEMATICO
-        JuegoMatematico objJM = new JuegoMatematico("Juan");
+        JuegoMatematico objJM = new JuegoMatematico();
         objJM.AgregarSOCompatible(objSOC);
         objJM.AgregarSOCompatible(objSOC1);
         objJM.AgregarSOCompatible(objSOC2);
@@ -91,7 +91,7 @@ public class Prueba
         System.out.println(objJM.VerInfo());
         System.out.println("\n");
         ////////////////////////////////////////////////////
-        JuegoMatematico objJM1 = new JuegoMatematico("Ximena");
+        JuegoMatematico objJM1 = new JuegoMatematico();
         objJM1.AgregarSOCompatible(objSOC);
         objJM1.AgregarSOCompatible(objSOC1);
         objJM1.AgregarSOCompatible(objSOC2);
@@ -104,7 +104,8 @@ public class Prueba
         System.out.println("\n");
         
         //EXTRA
-        JuegoMatematico objExtra = new JuegoMatematico("Luisa");
+        System.out.println("ESTE JUGADOR EXTRA POSTERIORMENTE SE VA A AGREGAR AL ARREGLO");
+        JuegoMatematico objExtra = new JuegoMatematico();
         objExtra.AgregarSOCompatible(objSOC);
         objExtra.AgregarSOCompatible(objSOC1);
         objExtra.AgregarSOCompatible(objSOC2);
@@ -125,7 +126,7 @@ public class Prueba
         refGJ.Ingresar(objAD1);
         refGJ.Ingresar(objJM);
         refGJ.Ingresar(objJM1);
-        refGJ.AgregarEnCualquierPosicion(3, objExtra);
+        refGJ.AgregarEnCualquierPosicion(objExtra);
         System.out.println("\n");
         refGJ.BuscarPorNombre();
         refGJ.MayorPuntajeTotal();

@@ -9,9 +9,9 @@ public class Adivinanza extends Juego implements Constantes02
 {
     private int responnde;
 
-    public Adivinanza(String nombreJugador) 
+    public Adivinanza() 
     {
-        super(nombreJugador);
+        super();
     }
 
     public int getResponnde() {
@@ -29,6 +29,7 @@ public class Adivinanza extends Juego implements Constantes02
         this.juegoTerminado = false;
         while (this.juegoTerminado==false)
         {
+            System.out.println("¡Bienvenid@ "+ this.nombreJugador + " al juego de las adivinanzas!");
             System.out.println("pregunta 1:"+ 
                     "¿Qué cosa es que cuanto más le quitas más grande es?");
             System.out.println("alternativas:\n"+"1)un agujero 2)el planeta 3)la vida"+"\nelige");
